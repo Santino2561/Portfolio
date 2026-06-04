@@ -317,3 +317,72 @@ h1 {
 .boton-enviar:hover {
   background-color: #0ea5e9;
 }
+
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 600px;
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #1e1e2e;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 36px 28px;
+}
+
+.timeline-punto {
+  position: absolute;
+  left: -9px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #1e1e2e;
+  border: 2px solid #38bdf8;
+}
+
+.timeline-item.activo .timeline-punto {
+  background-color: #38bdf8;
+}
+
+.timeline-fecha {
+  font-size: 12px;
+  color: #38bdf8;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timeline-titulo {
+  font-size: 17px;
+  font-weight: 700;
+  color: #e8e8f0;
+  margin: 6px 0 8px;
+}
+
+.timeline-desc {
+  font-size: 14px;
+  color: #888899;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 14px;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+  }
+}
