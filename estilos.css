@@ -392,6 +392,10 @@ h1 {
 }
 
 @media (max-width: 600px) {
+   .tarjeta-imagen {
+    font-size: 18px;
+    text-align: center;
+    }
   .timeline {
     padding-left: 14px;
   }
