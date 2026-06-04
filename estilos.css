@@ -20,6 +20,24 @@ body {
   background-color: #0a0a0f;
 }
 
+.bg-fade {
+  background: linear-gradient(to top, #0a0a0f, #061b31);
+}
+
+.bg-fade-left {
+  background: linear-gradient(to left, #0a0a0f, #010a25);
+}
+
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centro h2 {
+  text-align: center;
+}
+
 .azul {
   color: #38cbf8;
 }
@@ -69,7 +87,6 @@ body {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  margin-right: 80px;
   border-radius: 50%;
   border: 3px solid #38bdf8;
 }
@@ -96,10 +113,10 @@ h1 {
 }
 
 .descripcion {
-  font-size: 15px;
+  font-size: 25px;
   color: #888899;
   line-height: 1.7;
-  max-width: 400px;
+  max-width: 1500px;
   margin-bottom: 28px;
 }
 
@@ -144,10 +161,14 @@ h1 {
   color: #e8e8f0;
 }
 
-.fondo-violeta {
+.fondo-oscuro {
   background-color: #0d1117;
   border-top: 1px solid #1e1e2e;
   border-bottom: 1px solid #1e1e2e;
+}
+
+.centrado {
+  text-align: center;
 }
 
 .proyectos {
@@ -199,13 +220,14 @@ h1 {
 .habilidades {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
+    justify-content: center;
 }
 
 .tag {
-  padding: 8px 20px;
+  padding: 12px 28px;
   border-radius: 100px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   border: 2px solid;
 }
@@ -288,7 +310,8 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 500px;
+  max-width: 700px;
+  width: 100%;
 }
 
 .campo {
@@ -412,8 +435,13 @@ h1 {
   .timeline-item {
     padding-left: 20px;
   }
-  .hero-foto img {
-  width: 150px;
-  height: 150px;
+.hero-foto {
+  margin-right: 0;
+  align-self: center;
+}
+.hero {
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 20px;
 }
 }
